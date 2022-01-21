@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+body {
+    background-color: #D7E1E6;
+    background: url('../images/bg2.jpg');
+    background-size: cover;
+}
+
+#header {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.friend_req {
+    font-family: 'Lato';
+    color: #6CA199;
+    text-align: center;
+}
+
+.friend_contain {
+    width: 50%;
+    margin: auto;
+    padding: 10px 0 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #B6D1D0;
+}
+
+.friend_contain p {
+    font-size: 15px;
+}
+
+.accept_reject {
+    font-size: 18px;
+    padding: 10px 0 10px;
+}
+
+.req_button {
+    padding-bottom: 20px;
+}
+
+#accept_button,
+#ignore_button {
+    color: #6CA199;
+    letter-spacing: 1px;
+    font-size: 16px;
+    padding: 3px 25px 3px;
+    margin: 10px 5px 0 5px;
+    border: none;
+    border-radius: 15px;
+}
+
+#accept_button:hover {
+    background-color: #6CA199;
+    color: rgba(245, 245, 245, 0.89);
+}
+
+#ignore_button:hover {
+    background-color: #6CA199;
+    color: rgba(245, 245, 245, 0.89);
+}
+
+
+/* media queries */
+
+@media(max-width: 680px) and (min-width: 600px) {
+    #header {
+        font-size: 30px;
+    }
+    .friend_contain p {
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 599px) {
+    #header {
+        font-size: 25px;
+    }
+    .friend_contain p {
+        font-size: 10px;
+    }
+    .accept_reject {
+        font-size: 15px;
+    }
+    #accept_button,
+    #ignore_button {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    #header {
+        font-size: 20px;
+    }
+    .friend_contain p {
+        font-size: 10px;
+    }
+    .accept_reject {
+        font-size: 12px;
+    }
+    #accept_button,
+    #ignore_button {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 280px) {
+    #header {
+        font-size: 12px;
+    }
+    .friend_contain p {
+        font-size: 8px;
+    }
+    .accept_reject {
+        font-size: 8px;
+    }
+    #accept_button,
+    #ignore_button {
+        font-size: 5px;
+    }
+}

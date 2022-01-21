@@ -1,0 +1,257 @@
+body {
+    background-color: #D7E1E6;
+    background: url('../images/bg2.jpg');
+    background-size: cover;
+}
+
+#header {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.settings_container {
+    font-family: 'Lato';
+    color: #6CA199;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.profile_settings {
+    width: 50%;
+    font-size: 16px;
+    margin: auto;
+    padding: 10px 0 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #B6D1D0;
+}
+
+#profile_pic_contain {
+    width: 40%;
+    margin: auto;
+    border-radius: 50%;
+    border: 10px solid #4c726c;
+    margin-bottom: 15px;
+}
+
+#sub_header {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+input[type=email],
+input[type=password],
+input[type=text] {
+    background-color: whitesmoke;
+    color: #6CA199;
+    font-size: 12px;
+    padding: 8px 25px 8px;
+    margin: 10px 0px 10px;
+    border: none;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+input[type="submit"] {
+    letter-spacing: 1px;
+    font-size: 16px;
+    padding: 3px 25px 3px;
+    margin: 10px 5px 0 5px;
+    border: none;
+    border-radius: 15px;
+    background-color: #6CA199;
+    color: rgba(245, 245, 245, 0.89);
+}
+
+input[type="submit"]:hover {
+    color: #6CA199;
+    background-color: rgba(245, 245, 245, 0.89);
+}
+
+button {
+    letter-spacing: 1px;
+    font-size: 16px;
+    padding: 3px 25px 3px;
+    margin: 10px 5px 0 5px;
+    border: none;
+    border-radius: 15px;
+    background-color: #6CA199;
+    color: rgba(245, 245, 245, 0.89);
+}
+
+button:hover {
+    color: #6CA199;
+    background-color: rgba(245, 245, 245, 0.89);
+}
+
+
+/* media queries */
+
+@media(max-width: 770px) {
+    #header {
+        font-size: 35px;
+    }
+}
+
+@media(max-width: 695px) and (min-width: 660px) {
+    #logo {
+        font-size: 50px;
+    }
+    .checkbtn {
+        display: block;
+        align-items: center;
+        margin: 23px 30px 20px;
+    }
+    nav ul {
+        margin-top: 10px;
+        border-radius: 20px;
+        text-align: center;
+        position: fixed;
+        width: 40%;
+        height: 40vh;
+        background-color: #6CA199;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        right: -100%;
+        transition: all .5s;
+    }
+    .profile,
+    #first_name {
+        display: none;
+    }
+    #hidden_prof {
+        display: block;
+    }
+    .group1 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: space-evenly;
+        align-content: center;
+        margin: 0 auto;
+    }
+    nav ul li {
+        display: block;
+    }
+    #check:checked~ul {
+        right: 10px;
+    }
+    #header {
+        font-size: 30px;
+    }
+    #sub_header {
+        font-size: 16px;
+    }
+    .profile_settings {
+        font-size: 14px;
+    }
+    input[type=email],
+    input[type=password],
+    input[type=text] {
+        font-size: 10px;
+    }
+    input[type="submit"] {
+        font-size: 14px;
+    }
+    button {
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 659px) {
+    #header {
+        font-size: 25px;
+    }
+    #sub_header {
+        font-size: 14px;
+    }
+    .profile_settings {
+        font-size: 12px;
+    }
+    input[type=email],
+    input[type=password],
+    input[type=text] {
+        font-size: 8px;
+    }
+    input[type="submit"] {
+        font-size: 12px;
+    }
+    button {
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 550px) {
+    #header {
+        font-size: 20px;
+    }
+    #sub_header {
+        font-size: 12px;
+    }
+    .profile_settings {
+        font-size: 10px;
+    }
+    input[type=email],
+    input[type=password],
+    input[type=text] {
+        font-size: 8px;
+    }
+    input[type="submit"] {
+        font-size: 10px;
+    }
+    button {
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 505px) {
+    #header {
+        font-size: 20px;
+    }
+    #sub_header {
+        font-size: 12px;
+    }
+    .profile_settings {
+        font-size: 8px;
+    }
+    input[type=email],
+    input[type=password],
+    input[type=text] {
+        font-size: 8px;
+    }
+    input[type="submit"] {
+        font-size: 10px;
+    }
+    button {
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 280px) {
+    #header {
+        font-size: 15px;
+    }
+    #sub_header {
+        font-size: 8px;
+    }
+    .profile_settings {
+        font-size: 8px;
+    }
+    input[type=email],
+    input[type=password],
+    input[type=text] {
+        font-size: 7px;
+    }
+    input[type="submit"] {
+        font-size: 6px;
+    }
+    button {
+        font-size: 6px;
+    }
+}

@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Orelega+One&display=swap');
+a {
+    text-decoration: none;
+}
+
+#logo {
+    font-size: 70px;
+    font-weight: 500;
+    color: #D7E1E6;
+    letter-spacing: 5px;
+    padding-left: 30px;
+    font-family: 'Orelega One', cursive;
+    width: 50%;
+}
+
+.profile {
+    width: 60px;
+    margin-right: 30px;
+}
+
+.profile img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid #4c726c;
+}
+
+.profile img:hover {
+    opacity: 0.9;
+}
+
+i {
+    height: 100%;
+    width: 100%;
+    padding-left: 20px;
+    color: #D7E1E6;
+}
+
+i:hover {
+    color: #AECECA;
+}
+
+#first_name {
+    color: #D7E1E6;
+    letter-spacing: 1px;
+    font-size: 23px;
+    font-weight: 600;
+    padding: 0 10px 0 25px;
+}
+
+#first_name:hover {
+    color: #4c726c;
+}
+
+nav {
+    background-color: #6CA199;
+    border-radius: 60px;
+    margin: 20px;
+    padding: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    float: right;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.checkbtn {
+    float: right;
+    display: none;
+}
+
+#hidden_prof {
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media(max-width: 680px) {
+    #logo {
+        font-size: 50px;
+    }
+    .checkbtn {
+        display: block;
+        align-items: center;
+        margin: 23px 30px 20px;
+    }
+    nav ul {
+        margin-top: 10px;
+        border-radius: 20px;
+        text-align: center;
+        position: fixed;
+        width: 40%;
+        height: 40vh;
+        background-color: #6CA199;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        right: -100%;
+        transition: all .5s;
+    }
+    .profile,
+    #first_name {
+        display: none;
+    }
+    #hidden_prof {
+        display: block;
+    }
+    .group1 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: space-evenly;
+        align-content: center;
+        margin: 0 auto;
+    }
+    nav ul li {
+        display: block;
+    }
+    #check:checked~ul {
+        right: 10px;
+    }
+}
+
+@media(min-width: 300px) and (max-width: 370px) {
+    #logo {
+        font-size: 40px;
+    }
+    .checkbtn {
+        font-size: 10px
+    }
+}
+
+@media(max-width: 301px) {
+    #logo {
+        font-size: 30px;
+    }
+    .checkbtn {
+        font-size: 8px;
+        margin-top: 16px;
+    }
+}

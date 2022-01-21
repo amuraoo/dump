@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+.comment_section {
+    font-family: 'Lato';
+    margin-top: 15px;
+    padding: 20px;
+    color: #4c726c;
+    font-size: 15px;
+    background-color: #4c726c;
+    color: rgba(245, 245, 245, 0.89);
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.comment_section a {
+    font-family: 'Lato';
+    color: rgba(245, 245, 245, 0.89);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.comment_section img {
+    width: 5%;
+    height: 5%;
+    margin-right: 10px;
+    border-radius: 50px;
+}
+
+#comment_form textarea {
+    font-family: 'Lato';
+    color: #4c726c;
+    font-size: 15px;
+    width: 50%;
+    height: 60px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 12px;
+    background-color: whitesmoke;
+}
+
+#comment_form input[type="submit"] {
+    background-color: #B6D1D0;
+    letter-spacing: 1px;
+    font-size: 15px;
+    padding: 2px 20px 2px;
+    border: 1.2px solid #4c726c;
+    border-radius: 15px;
+    color: #4c726c;
+}
+
+#comment_form input[type="submit"]:hover {
+    color: rgba(245, 245, 245, 0.89);
+    background-color: #4c726c;
+}
+
+#comment_posted {
+    color: #4c726c;
+    font-size: 15px;
+    font-family: 'Lato';
+    text-align: center;
+}
+
+@media (max-width:580px) {
+    .comment_section a {
+        font-size: 12px;
+    }
+    .comment_section img {
+        width: 10%;
+        height: 10%;
+    }
+    #comment_form textarea {
+        font-size: 12px;
+    }
+    #comment_form input[type="submit"] {
+        font-size: 12px;
+    }
+    #comment_posted {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:480px) {
+    .comment_section a {
+        font-size: 10px;
+    }
+    .comment_section img {
+        width: 10%;
+        height: 10%;
+    }
+    #comment_form textarea {
+        font-size: 10px;
+    }
+    #comment_form input[type="submit"] {
+        font-size: 10px;
+    }
+    #comment_posted {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:390px) {
+    .comment_section a {
+        font-size: 8px;
+    }
+    .comment_section img {
+        width: 10%;
+        height: 10%;
+    }
+    #comment_form textarea {
+        font-size: 8px;
+    }
+    #comment_form input[type="submit"] {
+        font-size: 8px;
+    }
+    #comment_posted {
+        font-size: 8px;
+    }
+}

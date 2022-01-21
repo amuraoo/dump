@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Orelega+One&display=swap');
+body {
+    background: url('../images/bg2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Lato', sans-serif;
+    height: 100vh;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: rgb(255, 0, 0);
+}
+
+.logo {
+    font-family: 'Orelega One', cursive;
+    font-size: 120px;
+    font-weight: bold;
+    color: #6CA199;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.register-form {
+    background-color: #B6D1D0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+    padding: 12px 30px;
+}
+
+input[type=email],
+input[type=password],
+input[type=text] {
+    font-family: 'Lato', sans-serif;
+    background-color: whitesmoke;
+    color: #6CA199;
+    font-size: 12px;
+    width: 50%;
+    padding: 12px 35px;
+    margin: 12px 0px 10px;
+    border: none;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+::placeholder {
+    color: #6CA199;
+    border: none;
+}
+
+input[type=submit] {
+    font-family: 'Lato', sans-serif;
+    background-color: #6CA199;
+    color: whitesmoke;
+    font-size: 12px;
+    padding: 12px 10px;
+    margin: 10px 0px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    width: 50%;
+}
+
+input[type=submit]:hover {
+    opacity: 0.9;
+}
+
+#login {
+    margin-bottom: 20px;
+}
+
+a:link {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+a:visited {
+    color: whitesmoke;
+}
+
+a:hover {
+    color: #6CA199;
+}
+
+#login {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: whitesmoke;
+}
+
+#login a:link {
+    text-decoration: underline;
+}
